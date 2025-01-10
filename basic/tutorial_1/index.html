@@ -51,17 +51,50 @@
     </style>
 
 </head>
-<body>
+    <body>
 
     <BR>
     欸你看六花會動(ゝ∀･)
     <BR>
     
-     <button id="OPENMEPBOTTOM" onclick="alert('邪王真眼じゃおうしんがん(,,・ω・,,)')">跟她打招呼</button>
+     <button id="OPENMEPBOTTOM" onclick="gopage()">了解她更多(^_−)☆</button>
     
      <div id="imgDiv">
         <img src="./IMAGES/centerImg.gif" >
      </div>
 
-</body>
+     <script>
+
+        // 宣告變數
+            let name = "Alice"; // 可以更改
+            let age = 25;     // 不可更改
+            var city = "Taipei"; // 可更改 (舊方式)
+
+            name = "RIKKA";
+            age = age + 1;
+
+        // 顯示在控制台
+            console.log("Name:", name);
+            console.log("Age:", age);
+            console.log("City:", city);
+
+            name = "TAKANASHI"
+            console.log("Name:", name);
+
+            greet("TAKANASHI");
+            greet(name);
+            greet("LUCUS");
+
+        // 定義函數
+            function greet(who) {
+            console.log("HI," + who + "! ")
+             }   
+
+             function gopage() {
+           window.location.href = "https://zh.moegirl.org.cn/zh-tw/%E5%B0%8F%E9%B8%9F%E6%B8%B8%E5%85%AD%E8%8A%B1"
+             }
+
+     </script>
+
+    </body>
 </html>
